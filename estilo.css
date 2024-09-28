@@ -11,6 +11,7 @@ html,body{
     --cor2: #bbb;
     --cor3: #f8f1f1;
     --corbtnler: #0605fe;
+    --cor4:#da4f57;
 }
 input[type="checkbox"]{
     display: none;
@@ -56,11 +57,15 @@ nav {
     top: 0;
     background-color: azure;
     z-index: 10;
+    
+}
+nav>a:hover{
+    color: var(--cor4);
 }
 nav>a{color: #000;
     display: inline-block;
     text-decoration: none;
-   
+    transition: color 0.3 ease;
 }
 .bi{
     font-size: 1.3rem;
@@ -93,7 +98,8 @@ font-size: 4rem;
 color: #1d1d1d;
 }
 #texto .desc{
-    font-size: 1.2rem;
+    color: var(--cor4);
+    font-size: 1.5rem;
 }
 #fto{
     display: flex;
@@ -165,7 +171,7 @@ article {
     transition: height 0.4s ease;
 }
 .text.expanded > p {
-    max-height: 1000px; /* Grande o suficiente para mostrar todo o texto */
+    max-height: 1000px; 
 }
 .ler {
     display: block;
@@ -184,7 +190,6 @@ article {
 }
 aside{ padding-top: 20px;}
 .pop{
-    color: #000;
     justify-content: center;
    display:flex;
   text-decoration: none;
