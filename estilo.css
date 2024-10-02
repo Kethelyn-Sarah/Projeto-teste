@@ -93,6 +93,7 @@ position: relative;
     gap: 28px;
     margin-top: 5%;
 }
+
 #texto .title{
 font-size: 4rem;
 color: #1d1d1d;
@@ -106,7 +107,7 @@ color: #1d1d1d;
     align-items: start;
     justify-items: end;
     margin-top: 22px;
-    padding-left: 20%;
+    padding-left: 10%;
     width: 70%;
     z-index: 2;
 }
@@ -208,6 +209,27 @@ footer>a{ color: whitesmoke; text-decoration: none;}
 
 
 
+@media screen and (max-width: 1170px) {
+    
+#texto { padding-left: 8%; display: block;;}
+.title{ position: center;}
+    .f1, .shape{ left: 52%;}
+    .shape{ background-image: url(im3.png);}
+ .f1{ display: none;}
+    article {
+        width: 75%;
+        margin-top: 2em;
+    } main{ flex-wrap: wrap;}
+ 
+  article > p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .text{ margin-top: 10px; text-decoration: auto;}
+.imgs{ display: block;
+}
+footer{position: fixed;}
+}
 @media screen and (max-width: 768px) {
     nav {
         text-align: center;
@@ -223,7 +245,7 @@ footer>a{ color: whitesmoke; text-decoration: none;}
         width: 95%;
         margin-top: 2em;
     }
-
+#fto .f1{ display: none;}
     article > p {
         padding-left: 1em;
         padding-right: 1em;
@@ -233,10 +255,9 @@ footer>a{ color: whitesmoke; text-decoration: none;}
     display: none;
 }
     .ler {
+        display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    footer{
-        position: relative;
-    }
+    
 }
