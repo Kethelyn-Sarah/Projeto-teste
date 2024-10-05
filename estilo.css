@@ -43,6 +43,9 @@ color: white;
     text-decoration: none;
     color:aliceblue;
 }
+.dark article,.text{ background-color: #C0C0C0;}
+.dark article { box-shadow: 1px 2px 12px rgb(85, 48, 48);}
+.dark #texto .title{ color: var(--cor3);}
 /*fim modo dark*/
 nav {
    align-items: center;
@@ -126,13 +129,19 @@ width: fit-content;
     left: 50%;
     z-index: 1;
 }
+main>h1{ text-align: center;}
+.container{ display: flex;}
 main {
-    display: flex;
+    display: block;
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    margin-top: 3em;
+    margin-top: 4em;
 }
+.conter{
+ 
+    width: 80%;
+} .conter>h1{ color:#da4f57;}
 article {
     box-shadow: 1px 2px 12px rgb(0, 0, 0);
     width: 90%;
@@ -141,7 +150,7 @@ article {
     padding-bottom: 20px;
     text-align: center;
     margin: 5em auto;
-}.sobre{  background-color: var(--cor2);}
+}.sobre{   display: none; background-color: var(--cor2);}
 .sobre > h1 {
     background-color: grey;
     padding: 10px;
@@ -188,8 +197,38 @@ article {
 .ler:hover {
     color: white;
     background-color: var(--corbtnler);
+  
 }
 aside{ padding-top: 20px;}
+.mini-calender{ justify-content: center; gap: 4%; ; display: flex;
+list-style-type: none;}
+.mini-calender li.atual{
+position: relative;
+width: 100px; height: 100px;
+background-color: var(--cor3);
+font-size: 1.65rem;
+color: #000;
+transform: translateY(-29);
+border: 5px solid var(--cor4);
+}
+.mini-calender li.atual::before{
+    content: "";
+    position: absolute;
+    width: 30px; top: 44px;
+    left: -34px; height: 30px;
+    border-top-right-radius: 10px;
+    box-shadow: 6px -6px #da4f57;
+    background: #0605fe;
+}
+.mini-calender li.atual::after{
+    content: "";
+    position: absolute;
+    width: 30px; top: 44px;
+    right: -34px; height: 30px;
+    border-top-left-radius: 10px;
+    box-shadow: -6px -6px #da4f57;
+    background: #0605fe;
+}
 .pop{
     justify-content: center;
    display:flex;
@@ -201,7 +240,7 @@ footer {
     background-color: var(--cor1);
     text-align: center;
     padding: 1em;
-    position: relative;
+    position:relative;
     width: 100%;
     bottom: 0;
 }

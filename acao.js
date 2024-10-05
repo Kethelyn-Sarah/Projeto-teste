@@ -18,3 +18,12 @@ document.getElementById("btn-ler-mais").addEventListener("click", function() {
       button.textContent = "LER MENOS";
   }
 });
+
+//mini clendartio
+//ptrcisa funcionar
+
+let data = new Date();
+let diaNumrto = data.getDate();
+
+let  ativo = document.querySelector(".mini-calender li:nth-child('diaNumrto')");
+ativo.classList.add("atual");
