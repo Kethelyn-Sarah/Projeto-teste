@@ -200,34 +200,41 @@ article {
   
 }
 aside{ padding-top: 20px;}
+.ok{
+    width: 430px;
+    text-align: center;
+    justify-items: center;
+    padding-right: 15px;
+    height: 80px;
+}
 .mini-calender{ justify-content: center; gap: 4%; ; display: flex;
 list-style-type: none;}
 .mini-calender li.atual{
 position: relative;
-width: 100px; height: 100px;
-background-color: var(--cor3);
+width: 60px; height: 68px;
+background-color: var(--cor2);
 font-size: 1.65rem;
 color: #000;
+top: -46px;
 transform: translateY(-29);
-border: 5px solid var(--cor4);
+border: 5px solid #f8f1f1;
+border-radius: 25%;
 }
 .mini-calender li.atual::before{
     content: "";
     position: absolute;
-    width: 30px; top: 44px;
-    left: -34px; height: 30px;
+    width: 30px; top: 26px;
+    left: -37px; height: 30px;
     border-top-right-radius: 10px;
-    box-shadow: 6px -6px #da4f57;
-    background: #0605fe;
+    box-shadow: 6px -6px white;
 }
 .mini-calender li.atual::after{
     content: "";
     position: absolute;
-    width: 30px; top: 44px;
-    right: -34px; height: 30px;
+    width: 30px; top: 26px;
+    right: -37px; height: 30px;
     border-top-left-radius: 10px;
-    box-shadow: -6px -6px #da4f57;
-    background: #0605fe;
+    box-shadow: -6px -6px white;
 }
 .pop{
     justify-content: center;
