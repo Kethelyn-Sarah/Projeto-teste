@@ -7,7 +7,7 @@ html,body{
     transition: o.4s;
 }
 :root {
-    --cor1: #050505;
+    --cor1: hwb(0 0% 100%);
     --cor2: #bbb;
     --cor3: #f8f1f1;
     --corbtnler: #0605fe;
@@ -147,12 +147,29 @@ main {
     margin-top: 4em;
 }
 .conter{
- 
+    margin: 5em auto;
     width: 80%;
-} .conter>h1{ color:#da4f57;}
+} .conter>h1{ 
+    display: block;
+    color:#da4f57;}
+.banner{margin-right: -50px;
+    text-align: center;
+    gap: 13px;
+    display: flex;
+}
+.banner>img{ width: 100%; height: 100%; 
+box-shadow: 3px 3px black;}
+.tel1{ 
+    display: table-cell;
+    height: 100%;
+margin-top: 3%; text-align: left;
+border-radius: 10px; width: 100%;}
+.b2{
+    gap: -33%; justify-content:space-evenly; 
+    display: flex;}
 article {
     box-shadow: 1px 2px 12px rgb(0, 0, 0);
-    width: 90%;
+    width: 95%;
     max-width: 90vh;
     border-radius: 10px; 
     padding-bottom: 20px;
@@ -212,12 +229,16 @@ aside{ padding-top: 20px;}
     width: 430px;
     text-align: center;
     justify-items: center;
-    padding-right: 15px;
+    justify-content: center;
+   align-items: center;
+ padding-right: 43px;
     height: 80px;
 }
-.mini-calender{ justify-content: center; gap: 4%; ; display: flex;
-list-style-type: none;}
+.mini-calender{
+justify-content: center; gap: 4%; ; display: flex;
+list-style-type: none; margin: auto;}
 .mini-calender li.atual{
+    text-align: center;
 position: relative;
 width: 60px; height: 68px;
 background-color: var(--cor2);
@@ -228,7 +249,13 @@ transform: translateY(-29);
 border: 5px solid #f8f1f1;
 border-radius: 25%;
 }
-.mini-calender li.atual h5{ font-size: small;}
+.mini-calender li.atual h5{  
+    top: -30%;
+    font-size: small;}
+    .mini-calender li.atual h3{  
+        margin-top: 30%;
+        font-size: medium;
+    }
 .pop{
     justify-content: center;
    display:flex;
@@ -246,27 +273,24 @@ footer {
 }
 footer>a{ color: whitesmoke; text-decoration: none;}
 
-
-
 @media screen and (max-width: 1170px) {
-    
-#texto { padding-left: 8%; display: block;;}
+    body{overflow-x: hidden;}
+    #texto { padding-left: 8%; display: block;;}
 .title{ position: center;}
-    .f1, .shape{ left: 52%;}
+    .f1, .shape{align-items: center;}
     .shape{ background-image: url(im3.png);}
  .f1{ display: none;}
     article {
         width: 75%;
         margin-top: 2em;
     } main{ flex-wrap: wrap;}
- 
   article > p {
         padding-left: 1em;
         padding-right: 1em;
     }
     .text{ margin-top: 10px; text-decoration: auto;}
-.imgs{ display: block;
-}
+.imgs{ display: block;}
+    
 footer{position: fixed;}
 }
 @media screen and (max-width: 768px) {

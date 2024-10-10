@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="VERTICAL.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo.css">
     <script src="acao.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -37,7 +39,7 @@
     <div class="shape"></div>
    <div id="texto">
         <h1 class="title">Ser Pavoniano é</h1>
-        <p class="desc">Educar</p>
+        <p class="desc">Educar <span></span></p>
     </div>
     <div id="fto"><img class="f1" src="im3.png" alt=""></div>
 </section>
@@ -45,7 +47,7 @@
 <i class="bi bi-robot" > </i>
 
 <main class="container">
-   <section id="assuntos">
+   <section  data-aos="fade-right" id="assuntos">
     <article class="sobre">
         <h1 id="sobre ">SOBRE NÓS</h1>
         <div class="text">
@@ -60,13 +62,13 @@
 </section>
     </section>
     <section id="noticias">
-        <article>
+        <article data-aos="fade-left">
       <aside>
     <p>Temos cursos profissionalizantes</p>
       </aside>  
         </article>
 
-<article>
+<article data-aos="fade-up-left">
     <aside class="ok">
        <ul class="mini-calender">
         <li> Seg</li>
@@ -80,7 +82,7 @@
     </aside>
 </article>
 
-<article>
+<article data-aos="fade-up">
     
     <aside id="rede" class="pop">
         PAVONIANAS NAS REDES  
@@ -97,5 +99,8 @@
 <footer>
    <a href="politica.html"> Todos os direios reservados para AOPA</a>
 </footer>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>

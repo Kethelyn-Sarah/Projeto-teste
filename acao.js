@@ -28,6 +28,7 @@ let data = new Date();
 let diaNumrto = data.getDay();
 let dia = data.getDate();
 let mes = meses[data.getMonth()];
+let ano = data.getFullYear();
 
 let  ativo = document.querySelector(".mini-calender li:nth-child("+diaNumrto+")");
 ativo.classList.add("atual");
@@ -39,3 +40,16 @@ ativo.appendChild(h1);
 let h5 = document.createElement('h5');
 h5.innerHTML = mes;
 ativo.appendChild(h5);
+
+let h3 = document.createElement('h3');
+h3.innerHTML = ano;
+ativo.appendChild(h3);
+
+//texto se escrevendo
+
+var typed = new Typed(".typing", {
+  strings:["YouTuber", "Desenvolvedor", "Designer", "Freelancer"],
+  typeSpeed:100,
+  backSpeed:60,
+  loop:true
+});
