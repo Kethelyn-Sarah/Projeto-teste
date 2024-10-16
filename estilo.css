@@ -104,14 +104,13 @@ position: relative;
     gap: 28px;
     margin-top: 5%;
 }
-
 #texto .title{
 font-size: 4rem;
 color: #1d1d1d;
 }
 #texto .desc{
     color: var(--cor4);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 #fto{
     display: flex;
@@ -282,6 +281,7 @@ border-radius: 25%;
     margin: 10px;
     word-wrap: break-word;
 }
+.bot { padding-top: -30px;}
 form{ 
     max-width: 400px;
             margin: auto;
@@ -335,7 +335,6 @@ footer>a{ color: whitesmoke; text-decoration: none;}
     width: 280px;
     height: 258px; transition: scale 0.5s ease;
 }
-.gallery>img:hover{ scale: 1.5;}
 .politica{
     width: 90%;
     max-width: 800px;

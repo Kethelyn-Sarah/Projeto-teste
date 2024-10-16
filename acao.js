@@ -20,6 +20,22 @@ document.getElementById("btn-ler-mais").addEventListener("click", function() {
 });
 
 //mini clendartio
+
+        const words = [ "Gentileza", "Empático", "Solitário"];
+        let index = 0;
+        const wordElement = document.querySelector('.desc');
+
+        function changeWord() {
+            index = (index + 1) % words.length;
+            wordElement.style.opacity = '0'; 
+            setTimeout(() => {
+                wordElement.textContent = words[index];
+                wordElement.style.opacity = '1'; 
+            }, 500);
+        }
+
+        setInterval(changeWord, 4000);
+
 //ptrcisa funcionar
 
 let meses=['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
