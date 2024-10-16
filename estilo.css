@@ -283,6 +283,7 @@ border-radius: 25%;
 }
 .bot { padding-top: -30px;}
 form{ 
+    color: #000;
     max-width: 400px;
             margin: auto;
             background: #fff;
@@ -291,7 +292,8 @@ form{
             box-shadow: 0 2px 10px var(--cor4);
             margin-bottom: 12%;
 }
-form>table{ text-align: center;
+form>table{ color: #000; 
+    text-align: center;
     margin: 20px auto;
 }td{ padding: 10px;}
 form>button{
@@ -302,6 +304,7 @@ form>button{
     padding: 10px  13px;
 }
 form>label{
+    color: #000;
     display: block;
     margin-bottom: 5px;
 }
